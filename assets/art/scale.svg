@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="99.811226mm"
+   height="95.202286mm"
+   viewBox="0 0 99.811228 95.202288"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="scale.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="scale.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0253048"
+     inkscape:cx="250.1695"
+     inkscape:cy="164.82903"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient9"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop9" />
+      <stop
+         style="stop-color:#717171;stop-opacity:1;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Fish scales"
+       preserveAspectRatio="xMidYMid"
+       id="pattern9"
+       patternTransform="matrix(0.5,0,0,0.5,51.417267,442.18243)"
+       x="0"
+       y="0" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       preserveAspectRatio="xMidYMid"
+       width="52.937091"
+       height="52.937091"
+       patternTransform="translate(51.417267,442.18243)"
+       style="fill:#000000"
+       id="Fish scales"
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       inkscape:label="Fish scales">
+      <path
+         id="path48328"
+         style="font-variation-settings:normal;opacity:1;fill-opacity:1;stroke:none;stroke-width:23.2816;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+         d="M 0,0 C 0,14.663252 11.805097,26.468546 26.468546,26.468546 41.131994,26.468546 52.937091,14.663252 52.937091,0 52.560688,0.09705827 52.330704,0.31891654 52.220118,0.68172094 49.513432,11.903656 39.064675,19.500949 26.468546,19.500949 13.872401,19.500949 3.4236548,11.903656 0.71697638,0.68172094 0.6064252,0.31892409 0.37636535,0.09701291 0,0 Z m 26.468546,26.468546 c 0,14.663346 11.805097,26.468545 26.468545,26.468545 v -6.968372 c -12.596145,0 -23.044894,-7.596412 -25.751569,-18.818453 -0.110551,-0.362796 -0.340611,-0.584723 -0.716976,-0.68172 z m 0,0 c -0.376404,0.09706 -0.606392,0.318916 -0.716977,0.68172 C 23.044891,38.372307 12.596145,45.968719 0,45.968719 v 6.968372 c 14.663448,0 26.468546,-11.805199 26.468546,-26.468545 z" />
+    </pattern>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9"
+       id="radialGradient10"
+       cx="92.056747"
+       cy="64.229881"
+       fx="92.056747"
+       fy="64.229881"
+       r="47.716236"
+       gradientTransform="matrix(1,0,0,0.95602287,0,2.8246457)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.804641,-17.03152)">
+    <ellipse
+       style="fill:url(#radialGradient10);stroke-width:0.264583"
+       id="path9"
+       cx="92.056747"
+       cy="64.229881"
+       rx="47.716236"
+       ry="45.617813" />
+    <ellipse
+       style="fill:url(#pattern9);fill-opacity:1;stroke-width:0.264583"
+       id="path1"
+       cx="91.783043"
+       cy="62.587643"
+       rx="46.712643"
+       ry="43.793102" />
+  </g>
+</svg>

@@ -1,0 +1,664 @@
+[gd_scene format=3 uid="uid://dglshgnvmfkcc"]
+
+[ext_resource type="Texture2D" uid="uid://bunbrfp248fkn" path="res://assets/art/sky1.jpg" id="1_xf46x"]
+[ext_resource type="Script" uid="uid://bxw7jmooaof30" path="res://character_systems.gd" id="2_33a7m"]
+[ext_resource type="Texture2D" uid="uid://6fm8m7ep71k4" path="res://assets/art/ui_top.png" id="3_4hhkb"]
+[ext_resource type="FontFile" uid="uid://c2qqhnawpeu6p" path="res://assets/art/Poppins-Bold.ttf" id="3_mpvx8"]
+[ext_resource type="Texture2D" uid="uid://bs20rbqdk0ouy" path="res://assets/art/ui_text.png" id="3_p33n3"]
+[ext_resource type="Texture2D" uid="uid://4npkqjufwhnv" path="res://assets/art/cursor.png" id="4_h3hg2"]
+[ext_resource type="Script" uid="uid://dmye8tnkcsqff" path="res://mouse_handeling.gd" id="7_4hhkb"]
+[ext_resource type="Script" uid="uid://bxt2n8q3mx87" path="res://ray_interactor.gd" id="8_23vc1"]
+[ext_resource type="Texture2D" uid="uid://dcdxup54w3wdf" path="res://assets/art/investigate_.png" id="8_kxc42"]
+[ext_resource type="Texture2D" uid="uid://s7wvxj3k46y4" path="res://assets/art/daily_life_options.png" id="10_ooi07"]
+[ext_resource type="Texture2D" uid="uid://bxey01yhoc0hk" path="res://assets/art/maizono/240px-Sayaka_(3).png" id="11_nhjmh"]
+[ext_resource type="Texture2D" uid="uid://btjqnslxf6d0b" path="res://assets/art/outline.png" id="12_2p5sr"]
+[ext_resource type="Texture2D" uid="uid://ccpqiyr4v8fvn" path="res://assets/art/maizono/240px-Sayaka_(4).png" id="12_isf5l"]
+[ext_resource type="Texture2D" uid="uid://wylhswigp7ut" path="res://assets/art/iten_ui.png" id="12_p33n3"]
+[ext_resource type="Texture2D" uid="uid://b4hob1f7vjqje" path="res://assets/art/maizono/240px-Sayaka_(5).png" id="13_r1wvj"]
+[ext_resource type="Texture2D" uid="uid://berqp6mo82myg" path="res://assets/art/dots.png" id="13_s5hax"]
+[ext_resource type="Texture2D" uid="uid://bxihd3rf85mm2" path="res://assets/art/naegi/240px-0C6C3180.png" id="14_3nypo"]
+[ext_resource type="Texture2D" uid="uid://cw0wxuhhgls32" path="res://assets/art/maizono/240px-Sayaka_(6).png" id="14_tdxtk"]
+[ext_resource type="Texture2D" uid="uid://1s2hkysstiwk" path="res://assets/art/maizono/240px-Sayaka_(7).png" id="15_pti0a"]
+[ext_resource type="Texture2D" uid="uid://cyvdxw35tmduf" path="res://assets/art/naegi/240px-0C6EE580.png" id="15_qxhuu"]
+[ext_resource type="Texture2D" uid="uid://dosg7bdql5rag" path="res://assets/art/maizono/240px-Sayaka_(8).png" id="16_nxop7"]
+[ext_resource type="Texture2D" uid="uid://c20hfsf0b20mm" path="res://assets/art/naegi/240px-0C7C6980.png" id="16_oii82"]
+[ext_resource type="Texture2D" uid="uid://j1x2ifahejvq" path="res://assets/art/maizono/240px-Sayaka_(9).png" id="17_7v3sd"]
+[ext_resource type="Texture2D" uid="uid://dbpa11gt1uxgl" path="res://assets/art/naegi/240px-0C7F1D80.png" id="17_y7rsd"]
+[ext_resource type="Texture2D" uid="uid://c7phu5fayauyt" path="res://assets/art/naegi/240px-0C8CA180.png" id="18_1wom0"]
+[ext_resource type="Texture2D" uid="uid://wc5ytnqspusc" path="res://assets/art/maizono/240px-Sayaka_(10).png" id="18_q5n0n"]
+[ext_resource type="Texture2D" uid="uid://b688ir4sut7r8" path="res://assets/art/naegi/240px-0C8F5580.png" id="19_u6g2n"]
+[ext_resource type="Texture2D" uid="uid://bbgj37bgm0pi2" path="res://assets/art/maizono/240px-Sayaka_(11).png" id="19_utxdm"]
+[ext_resource type="Texture2D" uid="uid://bbkfosyurrkwt" path="res://assets/art/naegi/240px-0C66C980.png" id="20_gxkeb"]
+[ext_resource type="Texture2D" uid="uid://wd0ym36sdjf3" path="res://assets/art/maizono/240px-Sayaka_(12).png" id="20_kjopo"]
+[ext_resource type="Texture2D" uid="uid://dwjj8k68830m5" path="res://assets/art/maizono/240px-Sayaka_(13).png" id="21_h11pf"]
+[ext_resource type="Texture2D" uid="uid://dcyvein0qac8v" path="res://assets/art/naegi/240px-0C79B580.png" id="21_jcdbc"]
+[ext_resource type="Texture2D" uid="uid://da42kym4l2l7n" path="res://assets/art/naegi/240px-0C81D180.png" id="22_ear2j"]
+[ext_resource type="Texture2D" uid="uid://c4pm0uq2svif2" path="res://assets/art/maizono/240px-Sayaka_(14).png" id="22_y0dtd"]
+[ext_resource type="Texture2D" uid="uid://bf7l5vikjiybw" path="res://assets/art/maizono/240px-Sayaka_(15).png" id="23_m4gil"]
+[ext_resource type="Texture2D" uid="uid://cgcuis8ajn4pq" path="res://assets/art/naegi/240px-0C89ED80.png" id="23_rtaah"]
+[ext_resource type="Texture2D" uid="uid://2jgymq3j8s3" path="res://assets/art/naegi/240px-0C94BD80.png" id="24_1r7jg"]
+[ext_resource type="Texture2D" uid="uid://ckev5tqme7q1q" path="res://assets/art/maizono/240px-Sayaka_(16).png" id="24_l35vo"]
+[ext_resource type="Script" uid="uid://dv4k2ijv5njsd" path="res://maizono_interactions.gd" id="25_4hhkb"]
+[ext_resource type="Texture2D" uid="uid://dvda1lvloijga" path="res://assets/art/naegi/240px-0C697D80.png" id="25_7m8xr"]
+[ext_resource type="Texture2D" uid="uid://dwe7ywsxn7xec" path="res://assets/art/maizono/240px-Sayaka_(17).png" id="25_rmkrq"]
+[ext_resource type="Script" uid="uid://cvmx2kntq8cbb" path="res://Kuwada_interactions.gd" id="26_2j6sr"]
+[ext_resource type="Texture2D" uid="uid://cbo8pmck5xfur" path="res://assets/art/maizono/5(85).png" id="26_efl1t"]
+[ext_resource type="Texture2D" uid="uid://dc6dgxwf08rfh" path="res://assets/art/naegi/240px-0C744D80.png" id="26_xrjol"]
+[ext_resource type="Texture2D" uid="uid://cpe8eesa1st2k" path="res://assets/art/naegi/240px-0C636580.png" id="27_7wxty"]
+[ext_resource type="Texture2D" uid="uid://mkbfcd8qsup8" path="res://assets/art/maizono/5(80).png" id="27_ooi07"]
+[ext_resource type="Texture2D" uid="uid://b2tpacdalf5yk" path="res://assets/art/kuwada/240px-Leon_(8).png" id="27_vywut"]
+[ext_resource type="Texture2D" uid="uid://b20cend2e0f0r" path="res://assets/art/kuwada/240px-Leon_(1).png" id="28_efl1t"]
+[ext_resource type="Texture2D" uid="uid://c7dmxnw07c7yd" path="res://assets/art/maizono/5(81).png" id="28_q33gp"]
+[ext_resource type="Texture2D" uid="uid://dncvuilak01s7" path="res://assets/art/naegi/240px-0C770180.png" id="29_7l22v"]
+[ext_resource type="Texture2D" uid="uid://bl8jpeahqaspt" path="res://assets/art/maizono/5(82).png" id="29_cmq8n"]
+[ext_resource type="Texture2D" uid="uid://deh2exl43se8s" path="res://assets/art/kuwada/240px-Leon_(2).png" id="29_ooi07"]
+[ext_resource type="Texture2D" uid="uid://bwyl4wrmfxsjx" path="res://assets/art/naegi/240px-0C848580.png" id="30_1a0qk"]
+[ext_resource type="Texture2D" uid="uid://gu4b8mmdh1nd" path="res://assets/art/maizono/5(83).png" id="30_p33n3"]
+[ext_resource type="Texture2D" uid="uid://bv5dtj24vr1ah" path="res://assets/art/kuwada/240px-Leon_(3).png" id="30_q33gp"]
+[ext_resource type="Texture2D" uid="uid://bnnfe74ma1flj" path="res://assets/art/maizono/5(84).png" id="31_2p5sr"]
+[ext_resource type="Texture2D" uid="uid://dguyitb3m1o1k" path="res://assets/art/kuwada/240px-Leon_(4).png" id="31_cmq8n"]
+[ext_resource type="Texture2D" uid="uid://dx236657h4ktm" path="res://assets/art/naegi/240px-0C873980.png" id="31_u87a3"]
+[ext_resource type="Texture2D" uid="uid://df33uhnhkhi24" path="res://assets/art/naegi/240px-0C920980.png" id="32_ltn8c"]
+[ext_resource type="Texture2D" uid="uid://xanrqj0n1ck8" path="res://assets/art/kuwada/240px-Leon_(5).png" id="32_p33n3"]
+[ext_resource type="Texture2D" uid="uid://b2axeongfrmd6" path="res://assets/art/maizono/5(86).png" id="32_s5hax"]
+[ext_resource type="Texture2D" uid="uid://deysu1ksd7hnj" path="res://assets/art/naegi/240px-0C977180.png" id="33_2ev8k"]
+[ext_resource type="Texture2D" uid="uid://26hjo2yyv5ke" path="res://assets/art/kuwada/240px-Leon_(6).png" id="33_2p5sr"]
+[ext_resource type="Texture2D" uid="uid://dat2w6nykp4sq" path="res://assets/art/maizono/5(87).png" id="33_k0utm"]
+[ext_resource type="Texture2D" uid="uid://wgt073yj5ekb" path="res://assets/art/kuwada/240px-Leon_(7).png" id="34_s5hax"]
+[ext_resource type="Texture2D" uid="uid://b2rkw7co40g13" path="res://assets/art/maizono/5(88).png" id="34_t7tkf"]
+[ext_resource type="Texture2D" uid="uid://cx5dlgfaip8b7" path="res://assets/art/maizono/5(89).png" id="35_378lm"]
+[ext_resource type="Texture2D" uid="uid://cf07dajuflkdv" path="res://assets/art/kuwada/240px-Leon_(9).png" id="35_k0utm"]
+[ext_resource type="Texture2D" uid="uid://b7u6hiklu5wj3" path="res://assets/art/kuwada/240px-Leon_(10).png" id="36_t7tkf"]
+[ext_resource type="Texture2D" uid="uid://bvelksa0cq8cg" path="res://assets/art/maizono/5(90).png" id="36_ufqwy"]
+[ext_resource type="Texture2D" uid="uid://csg7glheld3hk" path="res://assets/art/kuwada/240px-Leon_(11).png" id="37_378lm"]
+[ext_resource type="Texture2D" uid="uid://bbvi25fenufg3" path="res://assets/art/maizono/5(91).png" id="37_nny7s"]
+[ext_resource type="Texture2D" uid="uid://bswxu0kn8c2bf" path="res://assets/art/maizono/5(92).png" id="38_t1uoe"]
+[ext_resource type="Texture2D" uid="uid://b0fwpvprirtr1" path="res://assets/art/kuwada/240px-Leon_(12).png" id="38_ufqwy"]
+[ext_resource type="Texture2D" uid="uid://boqetfjqa7t5v" path="res://assets/art/maizono/5(93).png" id="39_ixv0c"]
+[ext_resource type="Texture2D" uid="uid://dk208swbq1ykh" path="res://assets/art/kuwada/240px-Leon_(13).png" id="39_nny7s"]
+[ext_resource type="Texture2D" uid="uid://r4trxgt8ma2u" path="res://assets/art/maizono/5(94).png" id="40_67nas"]
+[ext_resource type="Texture2D" uid="uid://b6ifjoqcnab2n" path="res://assets/art/kuwada/240px-Leon_(14).png" id="40_t1uoe"]
+[ext_resource type="Texture2D" uid="uid://di5gx3ks16xv0" path="res://assets/art/kuwada/240px-Leon_(15).png" id="41_ixv0c"]
+[ext_resource type="Texture2D" uid="uid://cwshmhefsipto" path="res://assets/art/maizono/5(95).png" id="41_rx55c"]
+[ext_resource type="Texture2D" uid="uid://d2xka364bp0kd" path="res://assets/art/maizono/5(96).png" id="42_r7cwf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_33a7m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bghwj"]
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+albedo_color = Color(0.9300597, 0, 0.1982587, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mpvx8"]
+material = SubResource("StandardMaterial3D_bghwj")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fxwdy"]
+sky_curve = 0.0012131984
+sky_cover = ExtResource("1_xf46x")
+sky_cover_modulate = Color(0.8576911, 0.6467942, 3.85046e-07, 1)
+
+[sub_resource type="Sky" id="Sky_mmudp"]
+sky_material = SubResource("ProceduralSkyMaterial_fxwdy")
+
+[sub_resource type="Environment" id="Environment_sbavg"]
+background_mode = 2
+background_energy_multiplier = 2.0
+sky = SubResource("Sky_mmudp")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bghwj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_33a7m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4g3r4"]
+size = Vector3(1, 1.878418, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_mpvx8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c7uds"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_3nypo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qxhuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_oii82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_y7rsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_1wom0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_u6g2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_gxkeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jcdbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ear2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_rtaah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_1r7jg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_7m8xr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xrjol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_7wxty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7l22v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_1a0qk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_u87a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ltn8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2ev8k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3nypo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xkdyr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_tdxtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nhjmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_isf5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_r1wvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pti0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nxop7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7v3sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_q5n0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_utxdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kjopo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_h11pf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_y0dtd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_m4gil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_l35vo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_rmkrq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4hhkb"]
+size = Vector3(1, 3.1854248, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tjeq7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_efl1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ooi07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_q33gp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_cmq8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_p33n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_2p5sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_s5hax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_k0utm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_t7tkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_378lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ufqwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_nny7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_t1uoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ixv0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_67nas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_rx55c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_r7cwf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_67nas"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_vywut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_efl1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ooi07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q33gp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_cmq8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_p33n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2p5sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_s5hax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_k0utm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_t7tkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_378lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ufqwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_nny7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_t1uoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ixv0c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rx55c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_vywut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_efl1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ooi07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q33gp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_cmq8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_p33n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2p5sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_s5hax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_k0utm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_t7tkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_378lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ufqwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_nny7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_t1uoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ixv0c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Danganrompa_Seaked_Fates" type="Node3D" unique_id=1857206234]
+
+[node name="enviroment" type="Node3D" parent="." unique_id=1024334253]
+
+[node name="wall" type="StaticBody3D" parent="enviroment" unique_id=1477787829]
+transform = Transform3D(3.8182023, 0, 0, 0, 7.244586, 0, 0, 0, 11.07884, 13.545654, 2.1014972, 0)
+metadata/type = "wall"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="enviroment/wall" unique_id=1102600312]
+shape = SubResource("BoxShape3D_33a7m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="enviroment/wall" unique_id=914987113]
+mesh = SubResource("BoxMesh_mpvx8")
+
+[node name="skybox" type="WorldEnvironment" parent="enviroment" unique_id=911607616]
+environment = SubResource("Environment_sbavg")
+
+[node name="floor" type="StaticBody3D" parent="enviroment" unique_id=506612418]
+transform = Transform3D(40.316666, 0, 0, 0, 0.24278927, 0, 0, 0, 32.233162, 0, 0, 0)
+metadata/type = "floor"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="enviroment/floor" unique_id=283697548]
+shape = SubResource("BoxShape3D_bghwj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="enviroment/floor" unique_id=759649310]
+mesh = SubResource("BoxMesh_33a7m")
+
+[node name="slope" type="StaticBody3D" parent="enviroment" unique_id=1716903994]
+transform = Transform3D(0.23112707, 11.61281, 0, -0.44987923, 5.9661245, 0, 0, 0, 5.076727, 5.9040537, 2.5610304, 0)
+metadata/type = "slope"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="enviroment/slope" unique_id=673532762]
+transform = Transform3D(1, 4.7683716e-06, 0, 0, 0.99999833, 0, 0, 0, 0.9999921, 0, 0, 0)
+shape = SubResource("BoxShape3D_33a7m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="enviroment/slope" unique_id=1954325764]
+mesh = SubResource("BoxMesh_mpvx8")
+
+[node name="character" type="RigidBody3D" parent="." unique_id=63333816]
+transform = Transform3D(-4.3711413e-08, 0, -1.0000006, 0, 1, 0, 1.0000006, 0, -4.3711413e-08, -3.621739, 1.0532157, 0.12674487)
+lock_rotation = true
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("2_33a7m")
+metadata/current_action = "investigate"
+metadata/list_of_gifts = [["microphone", "music"], ["jello", "food"], ["book_of_love", "tool"], ["bowl_of_wheat", "food"], ["guitar", "music"], ["banjo", "music"], ["bowl_of_rice", "food"], ["speaker", "music"], ["wrist_watch", "tool"], ["bow_tie", "clothing"], ["white_shirt", "clothing"], ["jack_daniels", "special"]]
+metadata/Cam_Dir = 0.0
+
+[node name="collider" type="CollisionShape3D" parent="character" unique_id=1588606877]
+transform = Transform3D(0.5559256, 0, -1.8626451e-09, 0, 1, 0, 1.8626451e-09, 0, 0.5822834, 0, 0, 0)
+shape = SubResource("BoxShape3D_4g3r4")
+
+[node name="character_representation" type="MeshInstance3D" parent="character" unique_id=2121468662]
+transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 0, 3.5527137e-15, 0, 1, -1.4901161e-08, 0, -0.37578654)
+visible = false
+mesh = SubResource("CapsuleMesh_mpvx8")
+
+[node name="text_ui" type="Sprite3D" parent="character" unique_id=916117127]
+process_mode = 4
+transform = Transform3D(0.118, 0, 0, 0, 0.15, 0, 0, 0, 0.108, -0.15, 0.4, 0.295)
+texture = ExtResource("3_p33n3")
+
+[node name="name_ui" type="Sprite3D" parent="character/text_ui" unique_id=980645051]
+transform = Transform3D(0.866, 0, -1.2313678e-14, 0, 0.8, 0, 1.0663645e-14, 0, 1, -4.5, 2.5, 0)
+texture = ExtResource("3_4hhkb")
+
+[node name="name" type="Label3D" parent="character/text_ui/name_ui" unique_id=2147385706]
+transform = Transform3D(1.2, 0, 7.1054257e-15, 0, 1, 0, -8.5265115e-15, 0, 1, -4.9, 1, 2.428)
+pixel_size = 0.04
+modulate = Color(0, 0, 0, 1)
+text = "Sayaka  Maizono"
+font = ExtResource("3_mpvx8")
+font_size = 26
+outline_size = 10
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 2
+justification_flags = 171
+
+[node name="dialogue" type="Label3D" parent="character/text_ui" unique_id=566334450]
+transform = Transform3D(1.3, 0, -8.881785e-14, 0, 1, 0, 1.154632e-13, 0, 1, -8.6, 1.9, 2.261)
+pixel_size = 0.035
+font = ExtResource("3_mpvx8")
+font_size = 18
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 2
+justification_flags = 227
+width = 400.0
+
+[node name="cursor" type="Sprite3D" parent="character" unique_id=1110213741]
+transform = Transform3D(0.012758364, 0, -1.110223e-16, 0, 0.012, 0, 1.110223e-16, 0, 0.012, -0.051717296, 1.3673666, 0.20890212)
+texture = ExtResource("4_h3hg2")
+script = ExtResource("7_4hhkb")
+
+[node name="Timer" type="Timer" parent="character/cursor" unique_id=26780418]
+wait_time = 0.1
+autostart = true
+
+[node name="investigate_segment" type="Sprite3D" parent="character/cursor" unique_id=1379214295]
+transform = Transform3D(4, 0, 0, 0, 4.0000033, 0, -1.2789769e-13, 0, 4, 16.046352, -0.26078796, 0)
+visible = false
+texture = ExtResource("8_kxc42")
+
+[node name="interactor_starter" type="RayCast3D" parent="character" unique_id=1985257156]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.9604645e-08, 0, 1.6386373)
+target_position = Vector3(0, -4, 0)
+script = ExtResource("8_23vc1")
+
+[node name="character_reposition" type="Node3D" parent="character" unique_id=1761774012]
+
+[node name="options" type="Node3D" parent="character" unique_id=1604671154]
+transform = Transform3D(0.09, 0, -3.996803e-16, 0, 0.09, 0, 3.996803e-16, 0, 0.09, 0.7, 1.7, 0.263)
+visible = false
+
+[node name="option_1" type="Sprite3D" parent="character/options" unique_id=1648425170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 0)
+modulate = Color(0.23921569, 0.22745098, 0.22352941, 1)
+texture = ExtResource("10_ooi07")
+
+[node name="option_1_text" type="Label3D" parent="character/options/option_1" unique_id=175588896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
+pixel_size = 0.015
+font = ExtResource("3_mpvx8")
+font_size = 80
+
+[node name="option_2" type="Sprite3D" parent="character/options" unique_id=54939040]
+transform = Transform3D(1, 0, -7.72329e-15, 0, 1, 0, 7.72329e-15, 0, 1, 1.2, -2.4, 0)
+modulate = Color(0.23921569, 0.22745098, 0.22352941, 1)
+texture = ExtResource("10_ooi07")
+
+[node name="options_2_text" type="Label3D" parent="character/options/option_2" unique_id=638740092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12, 0)
+pixel_size = 0.015
+font = ExtResource("3_mpvx8")
+font_size = 80
+
+[node name="option_3" type="Sprite3D" parent="character/options" unique_id=658748366]
+transform = Transform3D(0.9, 0, -1.6917684e-14, 0, 1, 0, 1.5225915e-14, 0, 1, 2.5, -4.8, 0)
+visible = false
+modulate = Color(0.23921569, 0.22745098, 0.22352941, 1)
+texture = ExtResource("10_ooi07")
+
+[node name="options_3_text" type="Label3D" parent="character/options/option_3" unique_id=2140783616]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, -0.01, 0)
+pixel_size = 0.015
+text = "Spend some time with Sayaka"
+font = ExtResource("3_mpvx8")
+font_size = 80
+
+[node name="inventory" type="Node3D" parent="character" unique_id=1092478935]
+transform = Transform3D(1, 0, -7.1054274e-15, 0, 1, 0, 7.1054274e-15, 0, 1, -0.1, 0.5, 0.737)
+visible = false
+
+[node name="UI" type="Sprite3D" parent="character/inventory" unique_id=395963523]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+modulate = Color(0.25420576, 0.25420594, 0.25420588, 1)
+texture = ExtResource("12_p33n3")
+
+[node name="item_ui" type="Sprite3D" parent="character/inventory" unique_id=2029980682]
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, -0.5, 0.6, 0.43)
+visible = false
+modulate = Color(0.48022527, 0.48022527, 0.4802252, 1)
+texture = ExtResource("12_p33n3")
+
+[node name="name" type="Label3D" parent="character/inventory/item_ui" unique_id=8747887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
+pixel_size = 0.03
+font = ExtResource("3_mpvx8")
+
+[node name="cover0" type="Sprite3D" parent="character" unique_id=228898351]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1.5, 1, 0)
+visible = false
+texture = ExtResource("12_2p5sr")
+
+[node name="cover_color" type="Sprite3D" parent="character/cover0" unique_id=198846102]
+transform = Transform3D(0.915, 0, -1.7772452e-15, 0, 1, 0, 2.43805e-15, 0, 0.667, 0, 0, 0)
+modulate = Color(1, 0.954, 0.07999998, 0.60784316)
+texture = ExtResource("13_s5hax")
+
+[node name="cover_1" type="Sprite3D" parent="character" unique_id=679412057]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.5, 0, 0)
+visible = false
+texture = ExtResource("12_2p5sr")
+
+[node name="cover_color" type="Sprite3D" parent="character/cover_1" unique_id=203353015]
+transform = Transform3D(0.915, 0, -3.5544903e-15, 0, 1, 0, 4.8761e-15, 0, 0.667, 0, 0, 0)
+modulate = Color(1, 0.954, 0.07999998, 0.60784316)
+texture = ExtResource("13_s5hax")
+
+[node name="mc_sprites" type="AnimatedSprite3D" parent="character" unique_id=1109742077]
+transform = Transform3D(0.8, 0, -5.684342e-15, 0, 0.8, 0, 5.684342e-15, 0, 0.8, 3, -0.1, 0.2)
+visible = false
+sprite_frames = SubResource("SpriteFrames_c7uds")
+frame = 14
+metadata/states = ["default", "speech", "speech_2", "discuss", "discuss_2", "appalled", "self_speech", "confused", "inspired", "thnking", "hopeful", "shocked", "analizing", "standing", "analizing_2", "disturbed", "triumph", "sad", "awkward"]
+
+[node name="test_cube" type="MeshInstance3D" parent="character" unique_id=781310029]
+transform = Transform3D(1, 0, -2.1316282e-14, 0, 1, 0, 2.1316282e-14, 0, 1, -0.27126825, 0.3866248, 1.1964457)
+visible = false
+mesh = SubResource("BoxMesh_3nypo")
+
+[node name="world_camera" type="Camera3D" parent="character" unique_id=1044991526]
+transform = Transform3D(0.9999994, 0, -5.3290705e-14, 0, 1, 0, 5.3290705e-14, 0, 0.9999994, -0.16593766, 1.1297228, 2.5294535)
+keep_aspect = 0
+
+[node name="full_maizono" type="RigidBody3D" parent="." unique_id=424323496]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.441762)
+sleeping = true
+freeze = true
+script = ExtResource("25_4hhkb")
+metadata/object_type = "student"
+metadata/name = "maizono"
+
+[node name="maizono" type="AnimatedSprite3D" parent="full_maizono" unique_id=1099670817]
+transform = Transform3D(-2.6226834e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.6226834e-08, -0.4557588, 1.5724883, 0.079883575)
+sprite_frames = SubResource("SpriteFrames_xkdyr")
+
+[node name="shadow" type="AnimatedSprite3D" parent="full_maizono/maizono" unique_id=2124637642]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0.0040563936)
+modulate = Color(0, 0, 0, 1)
+sprite_frames = SubResource("SpriteFrames_xkdyr")
+
+[node name="maizono_collider" type="CollisionShape3D" parent="full_maizono" unique_id=495392216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3576455, 1.0927124, 0.09040356)
+shape = SubResource("BoxShape3D_4hhkb")
+
+[node name="speaking_maizono" type="AnimatedSprite3D" parent="full_maizono" unique_id=1993180993]
+unique_name_in_owner = true
+transform = Transform3D(-3.4969112e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.4969112e-08, -1.0085716, 1.9465837, 0.18484354)
+visible = false
+sprite_frames = SubResource("SpriteFrames_tjeq7")
+frame = 2
+frame_progress = 0.12227735
+
+[node name="full_kuwada" type="RigidBody3D" parent="." unique_id=839190062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.361414)
+sleeping = true
+freeze = true
+script = ExtResource("26_2j6sr")
+metadata/object_type = "student"
+metadata/name = "kuwada"
+
+[node name="kuwada" type="AnimatedSprite3D" parent="full_kuwada" unique_id=1596092303]
+transform = Transform3D(-2.6226834e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.6226834e-08, 0.5442412, 1.5724883, -0.9201164)
+sprite_frames = SubResource("SpriteFrames_67nas")
+
+[node name="kuwada_shadow" type="AnimatedSprite3D" parent="full_kuwada/kuwada" unique_id=1106804324]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0.0040563936)
+modulate = Color(0, 0, 0, 1)
+sprite_frames = SubResource("SpriteFrames_rx55c")
+
+[node name="kuwada_collider" type="CollisionShape3D" parent="full_kuwada" unique_id=289969869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6423545, 1.0927124, -0.90959644)
+shape = SubResource("BoxShape3D_4hhkb")
+
+[connection signal="body_entered" from="character" to="character" method="_on_body_entered"]
+[connection signal="timeout" from="character/cursor/Timer" to="character/cursor" method="_on_timer_timeout"]
+[connection signal="investigate_request" from="character/interactor_starter" to="full_maizono" method="_on_interactor_starter_investigate_request"]
+[connection signal="investigate_request" from="character/interactor_starter" to="full_kuwada" method="_on_interactor_starter_investigate_request"]

@@ -1,0 +1,341 @@
+[gd_scene format=3 uid="uid://bofj5bfxxit5q"]
+
+[ext_resource type="Texture2D" uid="uid://bunbrfp248fkn" path="res://assets/art/sky1.jpg" id="1_sjwru"]
+[ext_resource type="Texture2D" uid="uid://bxihd3rf85mm2" path="res://assets/art/naegi/240px-0C6C3180.png" id="2_p8hsi"]
+[ext_resource type="Texture2D" uid="uid://cyvdxw35tmduf" path="res://assets/art/naegi/240px-0C6EE580.png" id="3_fxl20"]
+[ext_resource type="Texture2D" uid="uid://c20hfsf0b20mm" path="res://assets/art/naegi/240px-0C7C6980.png" id="4_1xb2x"]
+[ext_resource type="Texture2D" uid="uid://dbpa11gt1uxgl" path="res://assets/art/naegi/240px-0C7F1D80.png" id="5_xlcke"]
+[ext_resource type="Texture2D" uid="uid://c7phu5fayauyt" path="res://assets/art/naegi/240px-0C8CA180.png" id="6_lkhqq"]
+[ext_resource type="Texture2D" uid="uid://b688ir4sut7r8" path="res://assets/art/naegi/240px-0C8F5580.png" id="7_3anp8"]
+[ext_resource type="Texture2D" uid="uid://bbkfosyurrkwt" path="res://assets/art/naegi/240px-0C66C980.png" id="8_a3aif"]
+[ext_resource type="Texture2D" uid="uid://dcyvein0qac8v" path="res://assets/art/naegi/240px-0C79B580.png" id="9_vhn2x"]
+[ext_resource type="Texture2D" uid="uid://da42kym4l2l7n" path="res://assets/art/naegi/240px-0C81D180.png" id="10_ykkoc"]
+[ext_resource type="Texture2D" uid="uid://cgcuis8ajn4pq" path="res://assets/art/naegi/240px-0C89ED80.png" id="11_alain"]
+[ext_resource type="Texture2D" uid="uid://2jgymq3j8s3" path="res://assets/art/naegi/240px-0C94BD80.png" id="12_fu0sx"]
+[ext_resource type="Texture2D" uid="uid://dvda1lvloijga" path="res://assets/art/naegi/240px-0C697D80.png" id="13_4lsob"]
+[ext_resource type="Texture2D" uid="uid://dc6dgxwf08rfh" path="res://assets/art/naegi/240px-0C744D80.png" id="14_cshe7"]
+[ext_resource type="Texture2D" uid="uid://cpe8eesa1st2k" path="res://assets/art/naegi/240px-0C636580.png" id="15_lxu7w"]
+[ext_resource type="Texture2D" uid="uid://b5eq82yqnvmdw" path="res://assets/art/naegi/240px-0C719980.png" id="16_m0wc2"]
+[ext_resource type="Texture2D" uid="uid://dncvuilak01s7" path="res://assets/art/naegi/240px-0C770180.png" id="17_c703v"]
+[ext_resource type="Texture2D" uid="uid://bwyl4wrmfxsjx" path="res://assets/art/naegi/240px-0C848580.png" id="18_hogmb"]
+[ext_resource type="Texture2D" uid="uid://dx236657h4ktm" path="res://assets/art/naegi/240px-0C873980.png" id="19_gocvn"]
+[ext_resource type="Texture2D" uid="uid://df33uhnhkhi24" path="res://assets/art/naegi/240px-0C920980.png" id="20_o1ssg"]
+[ext_resource type="Texture2D" uid="uid://deysu1ksd7hnj" path="res://assets/art/naegi/240px-0C977180.png" id="21_nraxw"]
+[ext_resource type="Texture2D" uid="uid://vo4a6sewiy7c" path="res://assets/art/naegi/240px-Naegi_Different_Whole_Body_Sprite.png" id="22_drqg8"]
+[ext_resource type="Script" uid="uid://3a68wtgpqnr1" path="res://hangman_gambit.gd" id="23_psb2f"]
+[ext_resource type="Texture2D" uid="uid://dia8b0o7rtcnh" path="res://assets/art/hangman.png" id="24_xlcke"]
+[ext_resource type="FontFile" uid="uid://c2qqhnawpeu6p" path="res://assets/art/Poppins-Bold.ttf" id="25_xlcke"]
+[ext_resource type="Texture2D" uid="uid://bvj2x7g4jb766" path="res://assets/art/blip_bar.png" id="26_3anp8"]
+[ext_resource type="Texture2D" uid="uid://pw3o1hr00kcf" path="res://assets/art/backdrop_minigame_1.png" id="27_lkhqq"]
+[ext_resource type="Texture2D" uid="uid://c14usqbgnousu" path="res://assets/art/letter_holder.png" id="28_3anp8"]
+[ext_resource type="Texture2D" uid="uid://j3ri4vam28lm" path="res://assets/art/scale.png" id="29_a3aif"]
+[ext_resource type="Script" uid="uid://ucaefyiux0j7" path="res://letter_emmiter.gd" id="30_vhn2x"]
+[ext_resource type="Script" uid="uid://fdkmms5xg5qu" path="res://clock.gd" id="31_ykkoc"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vt1j5"]
+sky_curve = 0.0012131984
+sky_cover = ExtResource("1_sjwru")
+sky_cover_modulate = Color(0.8576911, 0.6467942, 3.85046e-07, 1)
+
+[sub_resource type="Sky" id="Sky_mmudp"]
+sky_material = SubResource("ProceduralSkyMaterial_vt1j5")
+
+[sub_resource type="Environment" id="Environment_t17c6"]
+background_mode = 2
+background_energy_multiplier = 2.0
+sky = SubResource("Sky_mmudp")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y7bdg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_v70w2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ocrki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p8hsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fxl20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1xb2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xlcke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lkhqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3anp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a3aif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vhn2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ykkoc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_alain")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fu0sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_4lsob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cshe7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_lxu7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_m0wc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_c703v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hogmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gocvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_o1ssg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_nraxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_drqg8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ykkoc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_alain"]
+
+[sub_resource type="FontVariation" id="FontVariation_lkhqq"]
+base_font = ExtResource("25_xlcke")
+
+[sub_resource type="FontVariation" id="FontVariation_a3aif"]
+base_font = ExtResource("25_xlcke")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ykkoc"]
+size = Vector3(3.4204102, 3.4921265, 1)
+
+[node name="Node3D" type="Node3D" unique_id=1285972270]
+
+[node name="mc_camera" type="Camera3D" parent="." unique_id=1524302270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03, 3.5, 1.5)
+fov = 122.6
+
+[node name="enviroment" type="Node3D" parent="." unique_id=1370279835]
+
+[node name="skybox" type="WorldEnvironment" parent="enviroment" unique_id=1739013523]
+environment = SubResource("Environment_t17c6")
+
+[node name="floor" type="StaticBody3D" parent="enviroment" unique_id=188502106]
+transform = Transform3D(40.316666, 0, 0, 0, 0.24278927, 0, 0, 0, 32.233162, 0, 0, 0)
+metadata/type = "floor"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="enviroment/floor" unique_id=1391497833]
+shape = SubResource("BoxShape3D_y7bdg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="enviroment/floor" unique_id=2134935510]
+mesh = SubResource("BoxMesh_v70w2")
+
+[node name="mc" type="AnimatedSprite3D" parent="." unique_id=9149666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5136347, 0)
+sprite_frames = SubResource("SpriteFrames_ocrki")
+frame = 9
+script = ExtResource("23_psb2f")
+
+[node name="cursor_3d" type="Area3D" parent="mc" unique_id=279194818]
+
+[node name="cursor_block" type="MeshInstance3D" parent="mc/cursor_3d" unique_id=1345628145]
+transform = Transform3D(0.08906776, 0, 0, 0, 0.062158108, 0, 0, 0, 1, -0.2867167, 0.5456238, 0)
+mesh = SubResource("BoxMesh_ykkoc")
+
+[node name="cursor_collision" type="CollisionShape3D" parent="mc/cursor_3d" unique_id=1600193425]
+transform = Transform3D(0.08906776, 0, 0, 0, 0.062158108, 0, 0, 0, 1, -0.2867167, 0.5456238, 0)
+shape = SubResource("BoxShape3D_alain")
+
+[node name="box" type="Sprite3D" parent="." unique_id=1799675509]
+transform = Transform3D(0.25, 0, 0, 0, 0.17, 0, 0, 0, 0.3, -0.5730741, 3.3169084, 0.8)
+centered = false
+modulate = Color(7.219, 9.942, 18.892, 1)
+pixel_size = 0.007
+texture = ExtResource("24_xlcke")
+
+[node name="text_box" type="Label3D" parent="box" unique_id=1581426027]
+transform = Transform3D(1.2, 0, 0, 0, 1.7647059, 0, 0, 0, 0.99999994, 1.0922964, 0.37112808, 0.41999984)
+outline_render_priority = 1
+text = "HANGMAN'S GAMBIT"
+font = SubResource("FontVariation_lkhqq")
+font_size = 40
+outline_size = 0
+horizontal_alignment = 0
+
+[node name="bar" type="Sprite3D" parent="." unique_id=1081133310]
+transform = Transform3D(0.014, 0, 0, 0, 0.014, 0, 0, 0, 0.014, -0.57876587, 3.3572893, 0.8)
+render_priority = 1
+texture = ExtResource("26_3anp8")
+
+[node name="map" type="Sprite3D" parent="." unique_id=275143526]
+transform = Transform3D(0.6, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3.5, -0.8435917)
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("27_lkhqq")
+
+[node name="map2" type="Sprite3D" parent="map" unique_id=1172942212]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
+texture = ExtResource("27_lkhqq")
+
+[node name="letters" type="Node3D" parent="." unique_id=382757241]
+metadata/letters_ui = []
+metadata/word = "AT_HOME"
+metadata/quesion = "\"How did the blackened reach the top floor without the key\""
+
+[node name="letter_holder" type="Sprite3D" parent="letters" unique_id=5161687]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -1.1, 2.94, 0.589)
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("28_3anp8")
+
+[node name="_e" type="Sprite3D" parent="letters/letter_holder" unique_id=588046604]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0)
+texture = ExtResource("28_3anp8")
+
+[node name="letter" type="Label3D" parent="letters/letter_holder" unique_id=1291343522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01, 0, 0.05)
+outline_modulate = Color(1, 1, 1, 1)
+font = SubResource("FontVariation_a3aif")
+font_size = 70
+
+[node name="letter_apppear" type="Node3D" parent="." unique_id=1979459347]
+
+[node name="movement_time" type="Timer" parent="letter_apppear" unique_id=1393577424]
+wait_time = 0.05
+autostart = true
+
+[node name="clock_tick" type="Timer" parent="letter_apppear" unique_id=364395576]
+wait_time = 600.0
+
+[node name="body_clock" type="Sprite3D" parent="letter_apppear" unique_id=1165842812]
+script = ExtResource("31_ykkoc")
+
+[node name="clock" type="Label3D" parent="letter_apppear/body_clock" unique_id=303371321]
+
+[node name="letter_apearance" type="Sprite3D" parent="letter_apppear" unique_id=1832241167]
+transform = Transform3D(0.06, 0, 0, 0, 0.059997566, -0.0005403466, 0, 0.0005403466, 0.059997566, -1.8085525, 4.0435324, 0.06458843)
+gi_mode = 0
+modulate = Color(0.28983316, 0.6196189, 2.119, 1)
+texture = ExtResource("29_a3aif")
+script = ExtResource("30_vhn2x")
+metadata/direction = "right"
+metadata/letter_asset = true
+
+[node name="letter" type="Label3D" parent="letter_apppear/letter_apearance" unique_id=142014921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08824158, 0.101410866)
+font_size = 500
+
+[node name="spawn_time" type="Timer" parent="letter_apppear/letter_apearance" unique_id=601717840]
+wait_time = 3.0
+autostart = true
+
+[node name="collide" type="Area3D" parent="letter_apppear/letter_apearance" unique_id=2012346686]
+
+[node name="collision" type="CollisionShape3D" parent="letter_apppear/letter_apearance/collide" unique_id=1981553768]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021238327, -0.015708923, 1.1920929e-07)
+shape = SubResource("BoxShape3D_ykkoc")
+disabled = true
+
+[node name="letter_apearance2" type="Sprite3D" parent="letter_apppear" unique_id=1689012980]
+transform = Transform3D(0.06, 0, 0, 0, 0.05999995, 7.64454e-05, 0, -7.64454e-05, 0.05999995, -1.9377079, 3.0555086, 0.06458843)
+gi_mode = 0
+modulate = Color(0.28983316, 0.6196189, 2.119, 1)
+texture = ExtResource("29_a3aif")
+script = ExtResource("30_vhn2x")
+metadata/direction = "right"
+metadata/letter_asset = true
+
+[node name="letter" type="Label3D" parent="letter_apppear/letter_apearance2" unique_id=720899886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08824158, 0.101410866)
+font_size = 500
+
+[node name="spawn_time" type="Timer" parent="letter_apppear/letter_apearance2" unique_id=2087480995]
+wait_time = 3.0
+autostart = true
+
+[node name="collide" type="Area3D" parent="letter_apppear/letter_apearance2" unique_id=297875935]
+
+[node name="collision" type="CollisionShape3D" parent="letter_apppear/letter_apearance2/collide" unique_id=1226852810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021238327, -0.015708923, 1.1920929e-07)
+shape = SubResource("BoxShape3D_ykkoc")
+disabled = true
+
+[node name="letter_apearance3" type="Sprite3D" parent="letter_apppear" unique_id=718737720]
+transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, -2.0880456, 3.4688818, 0.06458843)
+gi_mode = 0
+modulate = Color(0.28983316, 0.6196189, 2.119, 1)
+texture = ExtResource("29_a3aif")
+script = ExtResource("30_vhn2x")
+metadata/direction = "right"
+metadata/letter_asset = true
+
+[node name="letter" type="Label3D" parent="letter_apppear/letter_apearance3" unique_id=1930147606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08824158, 0.101410866)
+font_size = 500
+
+[node name="spawn_time" type="Timer" parent="letter_apppear/letter_apearance3" unique_id=1312843270]
+wait_time = 3.0
+autostart = true
+
+[node name="collide" type="Area3D" parent="letter_apppear/letter_apearance3" unique_id=1655976825]
+
+[node name="collision" type="CollisionShape3D" parent="letter_apppear/letter_apearance3/collide" unique_id=1319970873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021238327, -0.015708923, 1.1920929e-07)
+shape = SubResource("BoxShape3D_ykkoc")
+disabled = true
+
+[node name="letter_apearance4" type="Sprite3D" parent="letter_apppear" unique_id=1005030705]
+transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, 1.949372, 3.656, 0.06458843)
+gi_mode = 0
+modulate = Color(0.28983316, 0.6196189, 2.119, 1)
+texture = ExtResource("29_a3aif")
+script = ExtResource("30_vhn2x")
+metadata/direction = "left"
+metadata/letter_asset = true
+
+[node name="letter" type="Label3D" parent="letter_apppear/letter_apearance4" unique_id=2052655780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08824158, 0.101410866)
+font_size = 500
+
+[node name="spawn_time" type="Timer" parent="letter_apppear/letter_apearance4" unique_id=754878388]
+wait_time = 3.0
+autostart = true
+
+[node name="collide" type="Area3D" parent="letter_apppear/letter_apearance4" unique_id=143265680]
+
+[node name="collision" type="CollisionShape3D" parent="letter_apppear/letter_apearance4/collide" unique_id=1025921026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021238327, -0.015708923, 1.1920929e-07)
+shape = SubResource("BoxShape3D_ykkoc")
+disabled = true
+
+[connection signal="area_entered" from="mc/cursor_3d" to="letter_apppear/letter_apearance" method="_on_cursor_3d_area_entered"]
+[connection signal="area_entered" from="mc/cursor_3d" to="letter_apppear/letter_apearance2" method="_on_cursor_3d_area_entered"]
+[connection signal="area_entered" from="mc/cursor_3d" to="letter_apppear/letter_apearance3" method="_on_cursor_3d_area_entered"]
+[connection signal="area_entered" from="mc/cursor_3d" to="letter_apppear/letter_apearance4" method="_on_cursor_3d_area_entered"]
+[connection signal="timeout" from="letter_apppear/movement_time" to="letter_apppear/letter_apearance" method="_on_movement_time_timeout"]
+[connection signal="timeout" from="letter_apppear/movement_time" to="letter_apppear/letter_apearance2" method="_on_movement_time_timeout"]
+[connection signal="timeout" from="letter_apppear/movement_time" to="letter_apppear/letter_apearance3" method="_on_movement_time_timeout"]
+[connection signal="timeout" from="letter_apppear/movement_time" to="letter_apppear/letter_apearance4" method="_on_movement_time_timeout"]
+[connection signal="timeout" from="letter_apppear/clock_tick" to="letter_apppear/body_clock" method="_on_clock_tick_timeout"]
